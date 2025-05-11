@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #08000D, #410073);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .sobre-nos {
+    text-align: center; 
+    padding: 50px;
+  }
+  
+  .sobre-nos h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-nos p {
+    color: #ccc;
+    opacity: 50%;
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  
+  .equipe {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.5); /* Opacidade 50% */
+    border: 1px solid #7f00ff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px #a349ff;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card.expandido {
+    width: 600px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .foto {
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    border: 3px solid #a349ff;
+    object-fit: cover;
+  }
+  
+  .nome {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ccc;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .seta {
+    width: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .seta:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .saiba-mais {
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  .saiba-mais:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Informações extras visíveis só quando expandido */
+  .info-extra {
+    display: none;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .card.expandido .info-extra {
+    display: block;
+  }
+  
+  /* Bolas decorativas no fundo */
+  .bolas {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .bola {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #a349ff, #7f00ff);
+    opacity: 0.4;
+  }
+  
+  .bola1 {
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 80px;
+  }
+  
+  .bola2 {
+    width: 40px;
+    height: 40px;
+    bottom: 200px;
+    right: 180px;
+  }
+  
+  .bola3 {
+    width: 150px;
+    height: 150px;
+    bottom: -50px;
+    right: 0;
+  }
