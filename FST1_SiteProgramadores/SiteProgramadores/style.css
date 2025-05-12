@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #08000D, #410073);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    color: white;
+    overflow-x: hidden;
+  }
+  
+  .sobre-nos {
+    text-align: center; 
+    padding: 50px;
+  }
+  
+  .sobre-nos h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-nos p {
+    color: #ccc;
+    opacity: 50%;
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  
+  .equipe {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+  
+  .card {
+    background: rgba(0, 0, 0, 0.5); /* Opacidade 50% */
+    border: 1px solid #7f00ff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px #a349ff;
+    transition: width 0.4s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card.expandido {
+    width: 600px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .foto {
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    border: 3px solid #a349ff;
+    object-fit: cover;
+  }
+  
+  .nome {
+    font-size: 13px;
+    margin-top: 5px;
+    color: #ccc;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .seta {
+    width: 40px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .seta:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .saiba-mais {
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  .saiba-mais:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Informações extras visíveis só quando expandido */
+  .info-extra {
+    display: none;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .card.expandido .info-extra {
+    display: block;
+  }
+  
+  /* Bolas decorativas no fundo */
+  .bolas {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  
+  .bola {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #a349ff, #7f00ff);
+    opacity: 0.4;
+  }
+  
+  .bola1 {
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 80px;
+  }
+  
+  .bola2 {
+    width: 40px;
+    height: 40px;
+    bottom: 200px;
+    right: 180px;
+  }
+  
+  .bola3 {
+    width: 150px;
+    height: 150px;
+    bottom: -50px;
+    right: 0;
+  }
+
+  /* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #773499;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu padrão (desktop) */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+/* Ícone hamburguer escondido no desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1a0033;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #5f00a0;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-socials {
+  margin: 20px 0;
+}
+
+.footer-socials a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 15px;
+}
+
+/* Menu responsivo com animação */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #007BFF;
+    flex-direction: column;
+    width: 200px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+    opacity: 0;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu.show {
+    max-height: 500px; /* altura suficiente para mostrar os itens */
+    opacity: 1;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
