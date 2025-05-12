@@ -28,10 +28,10 @@ body {
   
   .equipe {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-left: 50px;
+    margin-left: 0px;
   }
   
   .card {
@@ -158,3 +158,76 @@ body {
     bottom: -50px;
     right: 0;
   }
+
+  /* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #773499;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu padrão (desktop) */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+/* Ícone hamburguer escondido no desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Menu responsivo com animação */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #007BFF;
+    flex-direction: column;
+    width: 200px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+    opacity: 0;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .menu.show {
+    max-height: 500px; /* altura suficiente para mostrar os itens */
+    opacity: 1;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

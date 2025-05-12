@@ -8,69 +8,90 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="sobre-nos">
-    <h1>SOBRE NÓS</h1>
-    <p>Venha nos conhecer!</p>
-
-    <div class="equipe">
-      <!-- CARD 1 -->
-      <div class="card">
-        <h3>UX/UI Designer</h3>
-        <div class="foto"></div>
-        <div class="nome">Letícia Cariri</div>
-        <div class="btn-container">
-          <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
-          <div class="saiba-mais">Saiba Mais</div> 
-        </div>
-        <div class="info-extra">
-          <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
-          <p><strong>Experiências:</strong> Criação de interfaces para apps.</p>
-          <p><strong>Idiomas:</strong> Português, Inglês, Japonês básico.</p>
-          <p><strong>Habilidades:</strong> Figma, Adobe XD, CSS.</p>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">OURSELVES</div>
+    
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
       </div>
+    
+      <ul class="menu" id="menu">
+        <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="sobre-nos">
+      <h1>SOBRE NÓS</h1>
+      <p>Venha nos conhecer!</p>
 
-      <!-- CARD 2 -->
-      <div class="card">
-        <h3>Backend Developer</h3>
-        <div class="foto"></div>
-        <div class="nome">Caio Montenegro</div>
-        <div class="btn-container">
-          <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
-          <div class="saiba-mais">Saiba Mais</div> 
-        </div>
-        <div class="info-extra">
-          <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
-          <p><strong>Experiências:</strong> APIs com Node.js e Java.</p>
-          <p><strong>Idiomas:</strong> Português, Inglês.</p>
-          <p><strong>Habilidades:</strong> Java, SQL, Docker.</p>
-        </div>
-      </div>
+      <div class="equipe">
+        <!-- CARD 1 -->
+        <article class="card">
+          <h3>UX/UI Designer</h3>
+          <img src="img\fotoLeticia.jpg" alt="Leticia Cariri" class="foto">
+          <div class="nome">Letícia Cariri</div>
+          <div class="btn-container">
+            <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
+            <div class="saiba-mais">Saiba Mais</div> 
+          </div>
+          <div class="info-extra">
+            <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
+            <p><strong>Experiências:</strong> Criação de interfaces para apps.</p>
+            <p><strong>Idiomas:</strong> Português, Inglês, Japonês básico.</p>
+            <p><strong>Habilidades:</strong> Figma, Adobe XD, CSS.</p>
+          </div>
+        </article>
 
-      <!-- CARD 3 -->
-      <div class="card">
-        <h3>Front-End Developer</h3>
-        <div class="foto"></div>
-        <div class="nome">Jorge Marley</div>
-        <div class="btn-container">
-          <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
-          <div class="saiba-mais">Saiba Mais</div> 
-        </div>
-        <div class="info-extra">
-          <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
-          <p><strong>Experiências:</strong> Desenvolvimento com React.</p>
-          <p><strong>Idiomas:</strong> Português, Inglês técnico.</p>
-          <p><strong>Habilidades:</strong> HTML, CSS, JavaScript, React.</p>
-        </div>
+        <!-- CARD 2 -->
+        <article class="card">
+          <h3>Backend Developer</h3>
+          <img src="img\fotoCaio.jpg" alt="Caio Montenegro" class="foto">
+          <div class="nome">Caio Montenegro</div>
+          <div class="btn-container">
+            <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
+            <div class="saiba-mais">Saiba Mais</div> 
+          </div>
+          <div class="info-extra">
+            <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
+            <p><strong>Experiências:</strong> APIs com Node.js e Java.</p>
+            <p><strong>Idiomas:</strong> Português, Inglês.</p>
+            <p><strong>Habilidades:</strong> Java, SQL, Docker.</p>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <h3>Front-End Developer</h3>
+          <img src="img\fotoJorge.jpg" alt="Jorge Marley" class="foto">
+          <div class="nome">Jorge Marley</div>
+          <div class="btn-container">
+            <img src="img/setaSaibaMais.png" alt="Seta Saiba Mais" class="seta">
+            <div class="saiba-mais">Saiba Mais</div> 
+          </div>
+          <div class="info-extra">
+            <p><strong>Sobre mim:</strong> Lorem ipsum dolor sit amet.</p>
+            <p><strong>Experiências:</strong> Desenvolvimento com React.</p>
+            <p><strong>Idiomas:</strong> Português, Inglês técnico.</p>
+            <p><strong>Habilidades:</strong> HTML, CSS, JavaScript, React.</p>
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <div class="bolas">
     <div class="bola bola1"></div>
     <div class="bola bola2"></div>
     <div class="bola bola3"></div>
   </div>
+
+  <footer>
+    <p>&copy; 2025 OURSELVES</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

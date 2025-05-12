@@ -4,3 +4,10 @@ document.querySelectorAll('.seta').forEach(seta => {
     card.classList.toggle('expandido');
   });
 });
+
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
